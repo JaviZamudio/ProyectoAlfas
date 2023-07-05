@@ -1,0 +1,47 @@
+
+#navbar{
+    background-color: #FFFF;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    border-right: solid #7B6BAA;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */ 
+  }
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;/*top and bottom | left and right*/
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #6B7BAA;
+    color: white;
+    font-weight: lighter;
+
+}
+hr{
+    border: 0;
+    height: 3px;
+    width: 80%;
+    background: #D9D9D9;
+}

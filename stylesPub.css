@@ -1,0 +1,53 @@
+@font-face { 
+	font-family: "Typo_Round_Bold_Demo"; 
+	src: url('Typo_Round_Bold_Demo.otf'); 
+}
+h1{
+    text-align: center;
+    font-family: "Typo_Round_Bold_Demo";
+    color: #7B6BAA;
+    font-size: 60px;
+   margin-bottom: 0%;
+}
+#alumno{
+    font-size: 50px;
+    color: black;
+    max-width: auto;
+    margin-left: 50px;
+}
+#tabla{
+    width: 95%;
+    height: 80%;
+    /* flex-shrink: 0; */
+    font-family: "times new roman";
+    border-radius: 10px;
+    border: 1px solid #7B6BAA;
+    background: #FFF;
+    justify-content: center;
+    /* display: flex;  */
+    margin: auto;  
+    overflow: auto; 
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+th{ 
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+tr{
+    height: 60px;  
+}
+tr.odd-row {
+    background-color: #f3f3f3;
+}
+
+.btn{
+    background-color: #6B7BAA;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: black;
+    font-weight: bold;
+}

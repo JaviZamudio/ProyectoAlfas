@@ -1,0 +1,77 @@
+@font-face { 
+	font-family: "Typo_Round_Bold_Demo"; 
+	src: url('Typo_Round_Bold_Demo.otf'); 
+}
+h1{
+    text-align: center;
+    font-family: "Typo_Round_Bold_Demo";
+    color: #7B6BAA;
+    font-size: 60px;
+    margin-bottom: 0%;
+}
+#login{
+    width: 70%;
+    height: 500px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: solid #7B6BAA;
+    background: #FFF;
+    box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.25);/*offset-x | offset-y | blur-radius | spread-radius | color*/
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+}
+#left{
+    width: 40%;
+    height: 500px;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 0%;
+    float: left;
+}
+.vertical {
+    border-left: 6px solid #7B6BAA;
+    height: 450px;
+    margin-left: 4%;
+    margin-top: 25px;
+
+}
+#right{
+    width: 40%;
+    height: 500px;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    
+}
+img{
+    width: 300px;
+    height: 300px;
+    margin-left: 5%;
+}
+input[type=text], input[type=password]{
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    border: solid #7B6BAA;
+    background-color: #EBEBEB;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 10px;
+}
+input[type=submit]{
+    width: 40%;
+    height: 40px;
+    background-color: #6B7BAA;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: bolder;
+    font-size: 20px;
+}
