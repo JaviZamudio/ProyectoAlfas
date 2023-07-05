@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>consultaAlumnos</title>
     <link rel="stylesheet" href="styles/stylesConsulta.css">
 </head>
-<body style="background-color: #f9f9fa; margin: 0;">
+
+<body>
     <div id="navbar">
         <img src="logo.svg" alt="logo">
         <h2 id="user"></h2>
@@ -18,9 +20,25 @@
             <hr>
         </ul>
     </div>
-    
-    <h1>Alumnos</h1>
-    <div id="tabla"></div>
+   
+    <main>
+        <h1>Alumnos</h1>
+        <div id="tabla"></div>
+        <div id="botones">
+            <button id="btnAgregarAlumno" onclick="agregarAlumno()">Agregar Alumno</button>
+            <div id="vertical"></div>
+            <button id="btnAgregarCertificado">Agregar Certificado</button>
+        </div>
+
+        <div id="agregarAlumno">
+            <div id="formAgregarAlumno">
+                <form action=""></form>
+            </div>
+        </div>
+    </main>
+
     <script type="text/javascript" src="code/codigoAlum.js"></script>
+    <script type="text/javascript" src="code/codigoConsulta.js"></script>
 </body>
+
 </html>
