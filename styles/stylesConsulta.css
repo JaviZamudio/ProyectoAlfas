@@ -6,8 +6,9 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
     overflow: hidden;
+    border-radius: 1px;
     border-right: solid #7B6BAA;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
@@ -44,4 +45,30 @@ hr{
     height: 3px;
     width: 80%;
     background: #D9D9D9;
+}
+#tabla{
+    margin-left: 25%;
+    width: 900px;
+    height: 500px;
+    font-family: "times new roman";
+    border-radius: 10px;
+    border: 1px solid #7B6BAA;
+    background: #FFF;
+    justify-content: center;
+    overflow: auto; 
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+th{ 
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+tr{
+    height: 60px;  
+}
+tr.odd-row {
+    background-color: #f3f3f3;
 }
