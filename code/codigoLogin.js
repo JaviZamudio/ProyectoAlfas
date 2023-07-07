@@ -1,7 +1,7 @@
 function handleFormSubmission(event) {
     event.preventDefault();
-    const usuario = document.getElementsByName('user')[0].value;
-    const contrasena = document.getElementsByName('pass')[0].value;
+    let usuario = document.getElementsByName('user')[0].value;
+    let contrasena = document.getElementsByName('pass')[0].value;
 
     //Checks if the user exists in the database
     fetch('http://localhost:3000/api/admins/'+usuario+'/'+contrasena)
