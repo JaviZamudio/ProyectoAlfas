@@ -36,16 +36,16 @@
 
         <div class="bkdrpFormAgregar" id="bkdrpFormAgregarAlumno">
             <div class="formFondo">
-                <form  class="grid-AgregarAlumno" id="formAgregarAlumno" method="post" onsubmit="agregarAlumno(event)">
+                <form class="grid-AgregarAlumno" id="formAgregarAlumno" method="post" onsubmit="agregarAlumno(event)">
                     <h2 class="tituloForm">Agregar Alumno</h2>
                     <h3 class="title-ex">Expediente</h3>
                     <input class="input-ex" type="text" name="expediente" placeholder="Expediente" required>
                     <h3 class="title-nom">Nombres</h3>
                     <input class="input-nom" type="text" name="nombres" placeholder="Nombres" required>
                     <h3 class="title-ape">Apellidos</h3>
-                    <input class="input-ape"type="text" name="apellidos" placeholder="Apellidos" required>
+                    <input class="input-ape" type="text" name="apellidos" placeholder="Apellidos" required>
                     <h3 class="title-cor">Correo</h3>
-                    <input class="input-cor"type="text" name="correo" placeholder="Correo" required>
+                    <input class="input-cor" type="text" name="correo" placeholder="Correo" required>
                     <h3 class="title-ski">Skills</h3>
                     <input class="input-ski" type="text" name="skills" placeholder="Skills" required>
                     <input class="btn-submit" type="submit" value="Ingresar">
@@ -56,13 +56,18 @@
 
         <div class="bkdrpFormAgregar" id="bkdrpFormAgregarCertificado">
             <div class="formFondo">
-                <form  class="grid-AgregarCertificado" id="formAgregarCertificado" action="#" method="post" onsubmit="handleFormSubmission(event)">
+                <form class="grid-AgregarCertificado" id="formAgregarCertificado" action="#" method="post"
+                    onsubmit="handleFormSubmission(event)">
                     <h2 class="tituloForm">Agregar Certificado</h2>
                     <h3 class="title-ex">Expediente</h3>
                     <input class="input-ex" type="text" name="expediente" placeholder="Expediente" required>
                     <h3 class="title-cur">Cursos</h3>
                     <select class="input-cur" name="cursos" id="cursos" required>
                     </select>
+                    <h3 class="title-sta">Start date:</h3>
+                    <input class="input-sta" type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                    <h3 class="title-end">End date:</h3>
+                    <input class="input-end" type="date" id="end" name="trip-end" value="2018-07-29" min="2018-01-01" max="2018-12-31">
                     <input class="btn-submitCertificado" type="submit" value="Ingresar">
                     <input class="btn-salirCursos" type="button" value="Salir" onclick="salir(event)">
                 </form>

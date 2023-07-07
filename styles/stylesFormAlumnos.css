@@ -5,25 +5,32 @@
     border-radius: 10px;
     border: 1px solid #7B6BAA;
     background: #FFF;
-    
+
 }
 
-input{
+input {
     border-radius: 5px;
     border: none;
     background-color: #f3f3f3;
     width: 90%;
 }
+
 .grid-AgregarAlumno {
     display: grid;
-    grid-template-columns:[padding] 8px [left] 1fr [right] 1fr [padding] 8px;
-    grid-template-rows: [title-top] 1fr [title-1] 1fr [input-1] 1fr [title-2] 1fr [input-2] 1fr
-                        [title-3] 1fr [input-3] 1fr;
+    grid-template-columns: [padding] 8px [left] 1fr [right] 1fr [padding] 8px;
+    grid-template-rows: [title-top] 1fr [title-1] 1fr [input-1] 1fr [title-2] 1fr [input-2] 1fr [title-3] 1fr [input-3] 1fr;
 }
 
-.title-ex, .title-ape, .title-cor, .title-nom, .title-ski, .title-cur{
+.title-ex,
+.title-ape,
+.title-cor,
+.title-nom,
+.title-ski,
+.title-cur,
+.title-sta,
+.title-end{
     display: flex;
-    align-items: flex-end; 
+    align-items: flex-end;
 }
 
 .tituloForm {
@@ -36,71 +43,74 @@ input{
     grid-column: left/span 2;
 }
 
-.title-ex{
+.title-ex {
     grid-column-start: left;
     grid-column-end: right;
     grid-row-start: title-1;
 }
 
-.input-ex{
+.input-ex {
     grid-column-start: left;
     grid-column-end: right;
     grid-row-start: input-1;
 }
 
-.title-cor{
+.title-cor {
     grid-column-start: right;
     grid-row-start: title-1;
 }
 
-.input-cor{
+.input-cor {
     grid-column-start: right;
     grid-row-start: input-1;
 }
 
-.title-nom{
+.title-nom {
     grid-column-start: left;
     grid-column-end: right;
     grid-row-start: title-2;
 }
 
-.input-nom{
+.input-nom {
     grid-column-start: left;
     grid-column-end: right;
     grid-row-start: input-2;
 }
 
-.title-ape{
+.title-ape {
     grid-column-start: right;
     grid-row-start: title-2;
 }
 
-.input-ape{
+.input-ape {
     grid-column-start: right;
     grid-row-start: input-2;
 }
 
-.title-ski{
+.title-ski {
     grid-column-start: left;
     grid-column-end: right;
     grid-row-start: title-3;
 }
 
-.input-ski{
+.input-ski {
     grid-column-start: left;
     grid-column-end: right;
     grid-row-start: input-3;
 }
 
-.btn-submit{
+.btn-submit {
     grid-column-start: right;
     grid-row-start: title-3;
 }
-.btn-salir{
+
+.btn-salir {
     grid-column-start: right;
     grid-row-start: input-3;
 }
-.btn-submit,.btn-salir{
+
+.btn-submit,
+.btn-salir {
     background-color: #6B7BAA;
     color: #FFFFFF;
     cursor: pointer;
@@ -111,25 +121,26 @@ input{
     height: 80%;
 
 }
-.btn-submit:hover,.btn-salir:hover{
+
+.btn-submit:hover,
+.btn-salir:hover {
     background-color: #7481a5;
     color: #FFF;
     font-weight: bold;
 }
 
-.grid-AgregarCertificado{
+.grid-AgregarCertificado {
     display: grid;
-    grid-template-columns:[padding] 20px [left] 1fr [right] 1fr [padding] 20px;
-    grid-template-rows: [title-top] 1fr [title-1] 1fr [input-1] 1fr 
-                        [padding] .5fr [botones-1] 1fr [botones-2] 1fr;
+    grid-template-columns: [padding] 20px [left] 1fr [right] 1fr [padding] 20px;
+    grid-template-rows: [title-top] 1fr [title-1] 1fr [input-1] 1fr [title-2] 1fr [input-2] 1fr [padding] .5fr [botones] 1fr;
 }
 
-.title-cur{
+.title-cur {
     grid-column-start: right;
     grid-row-start: title-1;
 }
 
-.input-cur{
+.input-cur {
     grid-column-start: right;
     grid-row-start: input-1;
     width: 80%;
@@ -137,18 +148,45 @@ input{
     border-radius: 5px;
     background-color: #f3f3f3;
 }
-.btn-submitCertificado{
-    margin: auto;
-    grid-column: left/span 2;
-    grid-row-start: botones-1;
-}
-.btn-salirCursos{
-    margin: auto;
-    grid-column: left/span 2;
-    grid-row-start: botones-2;
+
+.title-sta {
+    grid-column-start: left;
+    grid-column-end: right;
+    grid-row-start: title-2;
 }
 
-.btn-submitCertificado,.btn-salirCursos{
+.input-sta {
+    grid-column-start: left;
+    grid-column-end: right;
+    grid-row-start: input-2;
+    width: 50%;
+}
+
+.title-end {
+    grid-column-start: right;
+    grid-row-start: title-2;
+}
+
+.input-end {
+    grid-column-start: right;
+    grid-row-start: input-2;
+    width: 50%;
+}
+
+.btn-submitCertificado {
+    margin: auto;
+    grid-column-start: left;
+    grid-row-start: botones;
+}
+
+.btn-salirCursos {
+    margin: auto;
+    grid-column-start: right;
+    grid-row-start: botones;
+}
+
+.btn-submitCertificado,
+.btn-salirCursos {
     background-color: #6B7BAA;
     color: #FFFFFF;
     cursor: pointer;
@@ -159,7 +197,8 @@ input{
     height: 90%;
 }
 
-.btn-submitCertificado:hover,.btn-salirCursos:hover{
+.btn-submitCertificado:hover,
+.btn-salirCursos:hover {
     background-color: #7481a5;
     color: #FFF;
     font-weight: bold;
