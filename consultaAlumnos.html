@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>consultaAlumnos</title>
     <link rel="stylesheet" href="styles/stylesConsulta.css">
+    <link rel="stylesheet" href="styles/stylesFormAlumnos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,19 +24,48 @@
             <hr>
         </ul>
     </div>
-   
+
     <main>
         <h1>Alumnos</h1>
         <div id="tabla"></div>
         <div id="botones">
-            <button id="btnAgregarAlumno" onclick="agregarAlumno()">Agregar Alumno</button>
+            <button id="btnAgregarAlumno" onclick="agregarAlumnoVisibilidad()">Agregar Alumno</button>
             <div id="vertical"></div>
-            <button id="btnAgregarCertificado">Agregar Certificado</button>
+            <button id="btnAgregarCertificado" onclick="agregarCertificadoVisibilidad()">Agregar Certificado</button>
         </div>
 
-        <div id="agregarAlumno">
-            <div id="formAgregarAlumno">
-                <form action=""></form>
+        <div class="bkdrpFormAgregar" id="bkdrpFormAgregarAlumno">
+            <div class="formFondo">
+                <form  class="grid-AgregarAlumno" id="formAgregarAlumno" method="post" onsubmit="agregarAlumno(event)">
+                    <h2 class="tituloForm">Agregar Alumno</h2>
+                    <h3 class="title-ex">Expediente</h3>
+                    <input class="input-ex" type="text" name="expediente" placeholder="Expediente" required>
+                    <h3 class="title-nom">Nombres</h3>
+                    <input class="input-nom" type="text" name="nombres" placeholder="Nombres" required>
+                    <h3 class="title-ape">Apellidos</h3>
+                    <input class="input-ape"type="text" name="apellidos" placeholder="Apellidos" required>
+                    <h3 class="title-cor">Correo</h3>
+                    <input class="input-cor"type="text" name="correo" placeholder="Correo" required>
+                    <h3 class="title-ski">Skills</h3>
+                    <input class="input-ski" type="text" name="skills" placeholder="Skills" required>
+                    <input class="btn-submit" type="submit" value="Ingresar">
+                    <input class="btn-salir" type="button" value="Salir" onclick="salir(event)">
+                </form>
+            </div>
+        </div>
+
+        <div class="bkdrpFormAgregar" id="bkdrpFormAgregarCertificado">
+            <div class="formFondo">
+                <form  class="grid-AgregarCertificado" id="formAgregarCertificado" action="#" method="post" onsubmit="handleFormSubmission(event)">
+                    <h2 class="tituloForm">Agregar Certificado</h2>
+                    <h3 class="title-ex">Expediente</h3>
+                    <input class="input-ex" type="text" name="expediente" placeholder="Expediente" required>
+                    <h3 class="title-cur">Cursos</h3>
+                    <select class="input-cur" name="cursos" id="cursos" required>
+                    </select>
+                    <input class="btn-submitCertificado" type="submit" value="Ingresar">
+                    <input class="btn-salirCursos" type="button" value="Salir" onclick="salir(event)">
+                </form>
             </div>
         </div>
     </main>
