@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Cursos</title>
+    <link rel="stylesheet" href="styles/stylesConsulta.css">
+    <link rel="stylesheet" href="styles/stylesFormCursos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="navbar">
+        <img src="logo.svg" alt="logo">
+        <h2 id="user"></h2>
+        <ul>
+            <hr>
+            <li><a href="consultaAlumnos.html">Consultar Alumnos</a></li>
+            <hr>
+            <li><a href="consultaCursos.html">Consultar Cursos</a></li>
+            <hr>
+        </ul>
+    </div>
+
+    <main>
+        <h1>Cursos</h1>
+        <div id="tabla"></div>
+        <div id="botones">
+            <div id="vertical"></div>
+            <button id="btnAgregarAlumno" onclick="agregarCursoVisibilidad()">Agregar Curso</button>
+            <div id="vertical"></div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="code/codigoConsultaCursos.js"></script>
+</body>
+</html>

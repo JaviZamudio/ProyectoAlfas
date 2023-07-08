@@ -70,5 +70,5 @@ fetch('http://localhost:3000/api/alumnos')
 })
 .catch(error => {
 console.error(error);
-dataContainer.textContent = 'Error loading data';
+dataContainer.textContent = 'Error loading table data';
 });
