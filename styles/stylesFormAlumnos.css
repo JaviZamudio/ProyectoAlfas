@@ -1,19 +1,4 @@
-.formFondo {
-    width: 60%;
-    height: 45%;
-    font-family: "times new roman";
-    border-radius: 10px;
-    border: 1px solid #7B6BAA;
-    background: #FFF;
 
-}
-
-input {
-    border-radius: 5px;
-    border: none;
-    background-color: #f3f3f3;
-    width: 90%;
-}
 
 .grid-AgregarAlumno {
     display: grid;
@@ -34,7 +19,6 @@ input {
 }
 
 .tituloForm {
-
     text-align: center;
     font-family: "Typo_Round_Bold_Demo";
     color: #7B6BAA;

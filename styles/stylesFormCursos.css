@@ -1,0 +1,87 @@
+form {
+    height: 100%;
+}
+
+.grid-AgregarCurso {
+    display: grid;
+    grid-template-columns: [padding] 8px [left]1fr [right]1fr [padding] 8px;
+    grid-template-rows: [top] 1fr [title-1] 1fr [input-1] 1fr [title-2] 1fr [input-2] 1fr [padding] .2fr [botones] 1fr
+    [padding] 8px;
+}
+
+.title-nom,.title-logo,.title-desc {
+    display: flex;
+    align-items: flex-end;
+}
+
+.tituloForm {
+    text-align: center;
+    font-family: "Typo_Round_Bold_Demo";
+    color: #7B6BAA;
+    font-size: 30px;
+    text-decoration: underline;
+    grid-column: left/span 2;
+}
+
+.title-nom {
+    grid-column-start: left;
+    grid-column-end: right;
+    grid-row-start: title-1;
+}
+
+.input-nom {
+    grid-column-start: left;
+    grid-column-end: right;
+    grid-row-start: input-1;
+}
+
+.title-logo {
+    grid-column-start: right;
+    grid-row-start: title-1;
+}
+
+.input-logo {
+    grid-column-start: right;
+    grid-row-start: input-1;
+}
+
+.title-desc{
+    grid-column-start: left;
+    grid-column-end: right;
+    grid-row-start: title-2;
+}
+.input-desc{
+    grid-column: left/span 2;
+    grid-row-start: input-2;
+    width: 100%;
+}
+
+.btn-submit {
+    grid-column-start: left;
+    grid-column-end: right;
+    grid-row-start: botones;
+}
+
+.btn-salir{
+    grid-column-start: right;
+    grid-row-start: botones;
+}
+
+.btn-submit,
+.btn-salir{
+    background-color: #6B7BAA;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    margin: auto;
+    width: 50%;
+    height: 90%;
+}
+
+.btn-submit:hover,
+.btn-salir:hover {
+    background-color: #7481a5;
+    color: #FFF;
+    font-weight: bold;
+}

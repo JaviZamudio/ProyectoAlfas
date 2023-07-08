@@ -31,6 +31,22 @@
             <button id="btnAgregarAlumno" onclick="agregarCursoVisibilidad()">Agregar Curso</button>
             <div id="vertical"></div>
         </div>
+
+        <div class="bkdrpFormAgregar" id="bkdrpFormAgregarCurso">
+            <div class="formFondo">
+                <form class="grid-AgregarCurso" id="formAgregarCurso" method="post" onsubmit="agregarCurso(event)">
+                    <h2 class="tituloForm">Agregar Curso</h2>
+                    <h3 class="title-nom">Nombre</h3>
+                    <input class="input-nom" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    <h3 class="title-logo" >Logo</h3>
+                    <input class="input-logo" type="text" name="logo" id="logo" placeholder="Logo" required>
+                    <h3 class="title-desc">Descripción</h3>
+                    <input class="input-desc" type="text" name="descripcion" id="descripcion" placeholder="Descripción" required>
+                    <input class="btn-submit" type="submit" value="Ingresar">
+                    <input class="btn-salir" type="button" value="Salir" onclick="salir(event)">
+                </form>
+            </div>
+        </div>
     </main>
 
     <script type="text/javascript" src="code/codigoConsultaCursos.js"></script>
