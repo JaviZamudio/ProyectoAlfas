@@ -47,44 +47,53 @@ fetch('http://localhost:3000/api/certificados')
     }
     );
 
-    function agregarCursoVisibilidad() {
-        let divAgregarCurso = document.getElementById('bkdrpFormAgregarCurso');
-        divAgregarCurso.style.display = 'flex';
-    }
-    
-    function salir(event) {
-        let form = document.getElementById("bkdrpFormAgregarCurso");
-        form.style.display = 'none';
-    }
+function agregarCursoVisibilidad() {
+    let divAgregarCurso = document.getElementById('bkdrpFormAgregarCurso');
+    divAgregarCurso.style.display = 'flex';
+}
 
-    function agregarCurso(event) {
-        event.preventDefault();
-        let nombre = document.getElementsByName('nombre')[0].value;
-        let descripcion = document.getElementsByName('descripcion')[0].value;
-        let logo = document.getElementsByName('logo')[0].value;
+function salir(event) {
+    let form = document.getElementById("bkdrpFormAgregarCurso");
+    form.style.display = 'none';
+}
 
-        fetch('http://localhost:3000/api/certificados', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                "nombre": nombre,
-                "descripcion": descripcion,
-                "logo": logo
-            })
+function agregarCurso(event) {
+    event.preventDefault();
+    let nombre = document.getElementsByName('nombre')[0].value;
+    let descripcion = document.getElementsByName('descripcion')[0].value;
+    let logo = document.getElementsByName('logo')[0].value;
+
+    fetch('http://localhost:3000/api/certificados', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            "nombre": nombre,
+            "descripcion": descripcion,
+            "logo": logo
         })
-            .then(response => response.json())
-            .then(data => {
-                alert("Curso agregado con éxito");
-                let form = document.getElementById("formAgregarCurso");
-                form.reset();
-                window.location.reload();
-            }
-            )
-            .catch(error => {
-                console.error(error);
-                alert('Error de conexión a la ruta de certificados');
-            }
-            )
-    }
+    })
+        .then(response => response.json())
+        .then(data => {
+            alert("Curso agregado con éxito");
+            let form = document.getElementById("formAgregarCurso");
+            form.reset();
+            window.location.reload();
+        }
+        )
+        .catch(error => {
+            console.error(error);
+            alert('Error de conexión a la ruta de certificados');
+        }
+        )
+}
+
+//Event listener para cerrar sesión
+let logout = document.getElementById('logout');
+logout.addEventListener('click', function (event) {
+    event.preventDefault();
+    sessionStorage.setItem('logged', false);
+    sessionStorage.setItem('username', '');
+    window.location.href = 'login.html';
+});

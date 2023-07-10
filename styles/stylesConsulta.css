@@ -166,3 +166,17 @@ input {
     width: 90%;
 }
 
+#logout{
+    font-size: 18px;
+    background-color: #6B7BAA;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#logout:hover {
+    background-color: #7e8aaa;
+    cursor: pointer;
+}

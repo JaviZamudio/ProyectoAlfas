@@ -23,6 +23,7 @@
             <li><a href="consultaCursos.html">Consultar Cursos</a></li>
             <hr>
         </ul>
+        <button id="logout">Cerrar Sesión</button>
     </div>
 
     <main>
@@ -64,9 +65,9 @@
                     <select class="input-cur" name="cursos" id="cursos" required>
                     </select>
                     <h3 class="title-sta">Start date:</h3>
-                    <input class="input-sta" type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                    <input class="input-sta" type="date" id="start" name="fechaInicio" value="2023-01-01">
                     <h3 class="title-end">End date:</h3>
-                    <input class="input-end" type="date" id="end" name="trip-end" value="2018-07-29" min="2018-01-01" max="2018-12-31">
+                    <input class="input-end" type="date" id="end" name="fechaFin" value="2023-01-01" >
                     <input class="btn-submitCertificado" type="submit" value="Ingresar">
                     <input class="btn-salirCursos" type="button" value="Salir" onclick="salir(event)">
                 </form>

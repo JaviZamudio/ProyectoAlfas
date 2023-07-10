@@ -33,7 +33,7 @@ fetch('http://localhost:3000/api/alumnos')
     }
     //Asgina cantidad de certificados
     const expediente = item.expediente;
-    fetch('http://localhost:3000/api/alumnos/'+expediente)
+    fetch('http://localhost:3000/api/alumnos_certificados/'+expediente)
     .then(response => response.json())
     .then(data => {
         const td = document.createElement('td');
