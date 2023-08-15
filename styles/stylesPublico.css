@@ -4,12 +4,11 @@
 }
 
 body {
-    background-color: #f9f9fa;
+    background-color: #F7F9FF;
     margin: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
 }
@@ -27,34 +26,72 @@ h1 {
     color: black;
 }
 
-#tabla {
+.tarjetas {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 0 auto;
+    height: 100%;
     width: 90%;
-    height: 80%;
-    font-family: "times new roman";
+
+}
+
+.tarjeta {
+    width: 250px;
+    height: 300px;
+    background-color: #FFF;
     border-radius: 10px;
-    border: 1px solid #7B6BAA;
-    background: #FFF;
+    border: #7B6BAA 5px solid;
+    display: grid;
+    grid-template-columns: [pad-left] 10px [left] 1fr [right]1fr [pad-right] 10px;
+    grid-template-rows: [pad-top] 10px [top] 90px [bottom] 190px [pad-bottom] 10px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.tarjeta:hover {
+    box-shadow: 0px 0px 20px 0px #7363a4;
+}
+
+.fotoAlumno {
+    grid-column: left;
     justify-content: center;
-    overflow: auto;
+    grid-row: top;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-self: center;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
+.tarjeta-nombre {
+    grid-column: right;
+    grid-row: top;
+    text-align: left;
 }
 
-th {
-    text-decoration: underline;
-    text-transform: capitalize;
+
+
+.tarjeta-body {
+    grid-column-start: left;
+    grid-column-end: pad-right;
+    grid-row-start: bottom;
+    grid-row-end: pad-bottom;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-top: .3rem;
 }
 
-tr {
-    height: 60px;
+
+.tarjeta-body p {
+    margin-top: 0rem;
+    margin-bottom: 0.3rem;
 }
 
-tr.odd-row {
-    background-color: #f3f3f3;
+.tarjeta-body p:nth-of-type(2n) {
+    font-style: italic;
+    font-weight: bold;
 }
 
 .btn {
@@ -63,6 +100,9 @@ tr.odd-row {
     cursor: pointer;
     border: black;
     font-weight: bold;
+    height: 50px;
+    width: 60px;
+    border-radius: 5px;
 }
 
 .topRightBtn {
@@ -77,10 +117,12 @@ tr.odd-row {
     border-radius: 5px;
 
 }
+
 .topRightBtn:hover {
     background-color: #7e8aaa;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
     font-weight: bold;

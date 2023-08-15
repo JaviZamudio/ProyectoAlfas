@@ -7,7 +7,7 @@ user.textContent = sessionStorage.getItem('username');
 
 const dataContainer = document.getElementById('tabla');
 
-fetch('http://localhost:3000/api/certificados')
+fetch('http://localhost:4000/api/certificados')
     .then(response => response.json())
     .then(data => {
         // Create the table element
@@ -63,7 +63,7 @@ function agregarCurso(event) {
     let descripcion = document.getElementsByName('descripcion')[0].value;
     let logo = document.getElementsByName('logo')[0].value;
 
-    fetch('http://localhost:3000/api/certificados', {
+    fetch('http://localhost:4000/api/certificados', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

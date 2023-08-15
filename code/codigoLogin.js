@@ -4,7 +4,7 @@ function handleFormSubmission(event) {
     let contrasena = document.getElementsByName('pass')[0].value;
 
     //Checks if the user exists in the database
-    fetch('http://localhost:3000/api/admins/'+usuario+'/'+contrasena)
+    fetch('http://localhost:4000/api/admins/'+usuario+'/'+contrasena)
     .then(response => response.json())
     .then(data => {
         if(data.length>0){

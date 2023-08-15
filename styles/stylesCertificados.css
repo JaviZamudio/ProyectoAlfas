@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "Typo_Round_Bold_Demo";
+    src: url('Typo_Round_Bold_Demo.otf');
+}
+
+body {
+    background-color: #f9f9fa;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Typo_Round_Bold_Demo";
+    color: #7B6BAA;
+    font-size: 60px;
+    margin-bottom: 0%;
+}
+
+#alumno {
+    font-size: 50px;
+    color: black;
+}
+
+#tabla {
+    width: 90%;
+    height: 80%;
+    font-family: "times new roman";
+    border-radius: 10px;
+    border: 1px solid #7B6BAA;
+    background: #FFF;
+    justify-content: center;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+tr {
+    height: 60px;
+}
+
+tr.odd-row {
+    background-color: #f3f3f3;
+}
+
+.btn {
+    background-color: #6B7BAA;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: black;
+    font-weight: bold;
+}
+
+.topRightBtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 18px;
+    background-color: #6B7BAA;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+
+}
+.topRightBtn:hover {
+    background-color: #7e8aaa;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}

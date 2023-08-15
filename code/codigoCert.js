@@ -5,7 +5,7 @@ const id = urlParams.get('id');
 const alumno = document.getElementById('alumno');
 alumno.textContent += id;
 
-fetch('http://localhost:3000/api/alumnos_certificados/' + id)
+fetch('http://localhost:4000/api/alumnos_certificados/' + id)
     .then(response => response.json())
     .then(data => {
         alumno.textContent += " " + data[0].nombres;

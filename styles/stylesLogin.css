@@ -2,6 +2,9 @@
 	font-family: "Typo_Round_Bold_Demo"; 
 	src: url('Typo_Round_Bold_Demo.otf'); 
 }
+body{
+    background-color: #F7F9FF;
+}
 h1{
     text-align: center;
     font-family: "Typo_Round_Bold_Demo";
