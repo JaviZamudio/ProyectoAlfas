@@ -1,0 +1,156 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    /* border: 1px solid black; */
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    text-align: center;
+    background-color: #efefef;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffff;
+    padding: 15px;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    width: 85vw;
+}
+
+.header .imgHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    background: linear-gradient(-35deg, #364451, #8e8f8e);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.header .imgHeader:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);   
+}
+
+.header button{
+    font-size: 15px;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.1);   
+    width: 140px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    background: linear-gradient(-35deg, #364451, #8e8f8e);
+    color:#efefef
+}
+
+.header button:hover{
+    background-color: #c4c1c1;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);   
+}
+
+.principal{
+    background-color: #ffff;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    width: 80vw;
+    min-height: 50vh;
+    padding: 25px;
+    margin: 20px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.info .imgPerfil{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10px 0 0;
+}
+
+.imgPerfil .imgPerfil1{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: linear-gradient(-35deg, #364451, #8e8f8e);
+}
+
+
+.info1{
+    width: 55%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.info2{
+    width: 30%;
+     
+}
+
+.tabla{
+    width: 90%;
+    margin: 30px 0 0 0;
+}
+
+.certificados{
+    width: 100%;
+}
+
+.certificados td{
+    height: 60px;
+}
+
+.certificados .trCertificado{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.certificados .trCertificado:hover{
+    background-color: #efefef;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+.imgVer{
+    width: 40px;
+    height: 40px;
+}
+
+.imgVer:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+.botonVer{
+    border: 0px;
+    background-color: transparent;
+}
+
+
+@media screen and (max-width: 800px){
+    body{
+        padding: 50px 0px 0px 0px;
+        justify-content:flex-start;
+        font-size: 15px;
+    }
+
+    .principal{
+        min-height: 60vh;
+    }
+}
+
